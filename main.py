@@ -1,3 +1,3 @@
 
 tstClass1 = MyFirstClass("Emey")
-tstClass1.
+tstClass1.HelloMe()
