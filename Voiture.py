@@ -1,18 +1,20 @@
-class Voiture:
+# from fichier Vehicule import class Vehicule ou bien on fait * signifier tt
+from Vehicule import Vehicule
+
+class Voiture(Vehicule):
   
   #constructeur
-  #prix est un attribut privé c est pr ça on a mettre __
   def __init__(self):
-    self.name = ""
-    self.couleur = ""
-    self.__prix = ""
+    self.__A = ""
 
   #getter and property for delete () when we want call the getX
   @property
-  def getPrix(self):
-    return self.__prix
+  def getA(self):
+    return self.__A
 
   #setter
-  def setPrix(self,prix):
-    slef.__prix = prix
+  def setA(self,A):
+    slef.__A = A
 
+  def consommation(self):
+    return Vehicule.motor * 2
